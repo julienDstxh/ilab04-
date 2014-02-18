@@ -35,7 +35,7 @@ body {
   font-family: museo sans rounded, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 100;
  
   overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
@@ -46,29 +46,32 @@ body {
 
 .header {
 	height: 60px;
-	background: #1f2026;
 	position: fixed;
 	width: 100%;
 	z-index: 10;
 	color: #fff;
-	
-	h1 {
-		text-align: center;
-		font-size: 24px;
-		line-height: 60px;
-	}
-	
-	.burger {
-		float: left;
-		line-height: 60px;
-		font-size: 24px;
-		position: absolute;
-		margin-left: 15px;
-	}
+	background: #1f2026;
 	
 	a {
 		color: #fff;
 	}
+}
+
+.toggler{
+	height: 60px;
+	width: 60px;
+	background: #1f2026;
+}
+.toggler__center{
+	padding: 22px 18px;
+	cursor: pointer;
+}
+.toggler__bar{
+	width: 20px;
+	height: 4px;
+	-webkit-border-radius: 1px;
+	background: #fff;
+	margin-bottom: 3px;
 }
 
 .tabs {
@@ -88,20 +91,46 @@ body {
 	}
 }
 
-/* TITLES
+/* MENU */
 
-.swiper-slide  {
+.menu{
+	position: fixed;
+	top: 0; 
+	width: 100%;
+	height: 100%;
+	background: #343640;
+	z-index: 20;
+	overflow-y: scroll;
+	-webkit-transform: translateX(-100%);
+	-webkit-transition: all .3s ease-out;
 	
-	h1{
-		position: fixed;
-		z-index: 200;
-		top: 10px;
-		font-size: 24px;
-		line-height: 60px;
-		height: 60px;	
-		color: white;
+	ul {
+		
+		padding-top: 105px;
+		
+		li {
+			height: 90px;
+			background: #3b3d48;
+		}
+		
+		li:nth-child(2n) {
+			background: #343640;
+		}
+		
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			text-align: center;
+			width: 100%;
+			display: block;
+			line-height: 90px;
+		}
 	}
-} */
+}
+.gocenter {
+	-webkit-transform: translateX(0);
+}
 
 /* FEED */
 
@@ -130,6 +159,21 @@ body {
 		background: #fcfcfc;
 	}
 }
+.swiper-slide {
+	position: relative;
+}
+
+.titre {
+		text-align: center;
+		font-size: 24px;
+		line-height: 60px;
+		background: tomato;
+		position: fixed;
+		top:0;
+		width: 100%;
+		height: 60px;
+		display: block;
+	}
 
 .feed {
 	padding-top: 105px;
@@ -192,6 +236,7 @@ body {
 
 
 
+<<<<<<< HEAD
 
 /* LOGIN */
 
@@ -348,3 +393,5 @@ form{
 
 
 
+=======
+>>>>>>> f87f3db97bc88610bac1c9d21704dd045ba5159e
