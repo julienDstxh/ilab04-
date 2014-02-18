@@ -2,18 +2,7 @@
 
 <div class="swiper-container">
 	<div class="swiper-wrapper">
-	
-		
-		
-		<section>
-		
-			<?php include('login/login.php') ?>
-			
-			
-		</section>
-		
-	
-		<section class="swiper-slide">
+		<section class="swiper-slide dribbble">
 			<script>
 			  dug({
 			    endpoint: 'http://api.dribbble.com/shots/popular',
@@ -39,7 +28,7 @@
 		<section class="swiper-slide">
 			<?php include('layervault.php') ?>
 		</section>
-		<section class="swiper-slide">
+<section class="swiper-slide">
 			<?php include('hackernews.php') ?>
 		</section>
 		<section class="swiper-slide">
@@ -51,5 +40,22 @@
 	</div>
 	<div class="pagination"></div>
 </div>
+<setion class="menu">
+	<header class="header">
+		logoooo
+	</header>
+	<div class="tabs">
+		<div class="ss-icon">list</div>
+		<div class="ss-icon">view</div>
+		<div class="ss-icon">settings</div>
+	</div>
+	<ul>
+		<li><a href="#">Dribbble</a></li>
+		<li><a href="#">API</a></li>
+		<li><a href="#">show HN</a></li>
+		<li><a href="#">Matt Griffin</a></li>
+		<li><a href="#">Rebecka</a></li>
+	</ul>
+</setion>
 	
 <?php include('footer.php') ?>
