@@ -2,6 +2,17 @@
 
 <div class="swiper-container">
 	<div class="swiper-wrapper">
+	
+		
+		
+		<section>
+		
+			<?php include('login/login.php') ?>
+			
+			
+		</section>
+		
+	
 		<section class="swiper-slide">
 			<script>
 			  dug({
