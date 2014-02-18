@@ -181,7 +181,7 @@ Pagination Styles
 }
 */
 /* GENERAL */
-/* line 33, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 body {
   font-family: museo sans rounded, Helvetica, sans-serif;
   font-size: 14px;
@@ -192,7 +192,7 @@ body {
   -webkit-overflow-scrolling: touch; }
 
 /* HEADER */
-/* line 46, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 .header {
   height: 60px;
   background: #1f2026;
@@ -200,23 +200,23 @@ body {
   width: 100%;
   z-index: 10;
   color: #fff; }
-  /* line 54, ../sass/screen.scss */
+  /* line 55, ../sass/screen.scss */
   .header h1 {
     text-align: center;
     font-size: 24px;
     line-height: 60px; }
-  /* line 60, ../sass/screen.scss */
+  /* line 61, ../sass/screen.scss */
   .header .burger {
     float: left;
     line-height: 60px;
     font-size: 24px;
     position: absolute;
     margin-left: 15px; }
-  /* line 68, ../sass/screen.scss */
+  /* line 69, ../sass/screen.scss */
   .header a {
     color: #fff; }
 
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .tabs {
   height: 45px;
   width: 100%;
@@ -225,7 +225,7 @@ body {
   color: white;
   background: #2a2b33;
   z-index: 10; }
-  /* line 82, ../sass/screen.scss */
+  /* line 83, ../sass/screen.scss */
   .tabs div {
     float: left;
     width: 33.3333%;
@@ -247,45 +247,45 @@ body {
 	}
 } */
 /* FEED */
-/* line 107, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .links {
   background: #fcfcfc; }
-  /* line 110, ../sass/screen.scss */
+  /* line 111, ../sass/screen.scss */
   .links li {
     height: 90px; }
 
-/* line 116, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .graphic li {
   overflow: hidden;
   display: block; }
-/* line 121, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .graphic a {
   height: 384px;
   overflow: hidden; }
-/* line 125, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .graphic .legend {
   height: 90px;
   margin-top: -8px !important;
   clear: both;
   background: #fcfcfc; }
 
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .feed {
   padding-top: 105px;
   position: relative; }
-  /* line 137, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   .feed li {
     color: #939a9c;
     display: block;
     width: 100%;
     position: relative; }
-    /* line 143, ../sass/screen.scss */
+    /* line 144, ../sass/screen.scss */
     .feed li:nth-child(1n) .drag {
       background: #3b3d48; }
-    /* line 147, ../sass/screen.scss */
+    /* line 148, ../sass/screen.scss */
     .feed li:nth-child(2n) .drag {
       background: #343640; }
-    /* line 151, ../sass/screen.scss */
+    /* line 152, ../sass/screen.scss */
     .feed li .drag {
       color: #1f2026;
       text-align: center;
@@ -296,7 +296,7 @@ body {
       float: left;
       margin-right: 15px;
       z-index: 10; }
-    /* line 164, ../sass/screen.scss */
+    /* line 165, ../sass/screen.scss */
     .feed li hr {
       z-index: -20;
       height: 1px;
@@ -307,16 +307,144 @@ body {
       border: none;
       position: relative;
       bottom: 0; }
-    /* line 176, ../sass/screen.scss */
+    /* line 177, ../sass/screen.scss */
     .feed li a {
       color: #1f2026;
       text-decoration: none;
       font-size: 18px; }
-      /* line 181, ../sass/screen.scss */
+      /* line 182, ../sass/screen.scss */
       .feed li a:hover {
         /* color: lightgreen; */ }
-    /* line 186, ../sass/screen.scss */
+    /* line 187, ../sass/screen.scss */
     .feed li img {
       width: 100%; }
 
 /* LOGIN */
+/* line 200, ../sass/screen.scss */
+input[type=text], input[type=password], input[type=submit] {
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  outline: none;
+  padding: 20px;
+  text-align: center; }
+
+/* line 209, ../sass/screen.scss */
+input[type=text], input[type=password] {
+  width: calc(100% - 40px);
+  color: rgba(31, 32, 38, 0.8); }
+
+/* line 215, ../sass/screen.scss */
+input[type=submit] {
+  width: 100%;
+  cursor: pointer;
+  background: #3b3d48;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300; }
+
+/* line 224, ../sass/screen.scss */
+form {
+  padding: 30px;
+  padding-bottom: 0px; }
+
+/* line 232, ../sass/screen.scss */
+.session_container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  /* line 241, ../sass/screen.scss */
+  .session_container .login_warp {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #1f2026;
+    z-index: 10000; }
+    /* line 250, ../sass/screen.scss */
+    .session_container .login_warp span {
+      text-align: center;
+      color: #fff;
+      width: 100%;
+      display: block;
+      font-weight: 100;
+      margin-top: 10px;
+      font-size: .7rem; }
+    /* line 260, ../sass/screen.scss */
+    .session_container .login_warp .login_logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 70px;
+      margin-bottom: 40px; }
+  /* line 272, ../sass/screen.scss */
+  .session_container .signup_warp {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: calc(100% - 60px);
+    background: #2a2b33;
+    z-index: 11000;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    /* line 283, ../sass/screen.scss */
+    .session_container .signup_warp h1 {
+      display: block;
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      background: #2a2b33;
+      color: #fff; }
+  /* line 296, ../sass/screen.scss */
+  .session_container .errer_login_wrap, .session_container .errer_signup_wrap, .session_container .signup_ok {
+    height: 100%;
+    width: 100%;
+    background: #2a2b33;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000000;
+    display: none; }
+    /* line 306, ../sass/screen.scss */
+    .session_container .errer_login_wrap span, .session_container .errer_signup_wrap span, .session_container .signup_ok span {
+      position: absolute;
+      top: 30%;
+      width: calc(100% - 120px);
+      padding: 60px; }
+      /* line 313, ../sass/screen.scss */
+      .session_container .errer_login_wrap span p, .session_container .errer_signup_wrap span p, .session_container .signup_ok span p {
+        display: block;
+        text-align: center;
+        font-weight: 300;
+        font-size: .8rem;
+        color: #fff;
+        text-align: center; }
+      /* line 322, ../sass/screen.scss */
+      .session_container .errer_login_wrap span button, .session_container .errer_signup_wrap span button, .session_container .signup_ok span button {
+        background: none;
+        border: none;
+        width: 100%;
+        overflow: visible;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 20px;
+        background: #3b3d48;
+        color: #fff;
+        outline: none;
+        margin-top: 40px; }
+
+/*SAVE*/

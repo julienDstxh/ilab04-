@@ -1,5 +1,6 @@
 @import "frameworks/reset",
-		"frameworks/swiper";
+		"frameworks/swiper",
+		"frameworks/animation";
 
 /*
 .pagination {
@@ -193,6 +194,155 @@ body {
 
 
 /* LOGIN */
+
+
+
+input[type=text], input[type=password], input[type=submit]{
+	 margin-left: auto;
+	 margin-right: auto;
+	 border: 0px;
+	 outline: none;
+	 padding: 20px;
+	 text-align: center;
+}
+
+input[type=text], input[type=password]{
+	 width:calc(100% - 40px);
+	 color: rgba(31,32,38,0.8);
+}
+
+	
+input[type=submit]{
+	 width: 100%;
+	 cursor: pointer;
+	 background: #3b3d48;
+	 color: #fff;
+	 font-size: 1rem;
+	 font-weight: 300;
+}
+
+form{
+		 
+	 padding: 30px;
+	 padding-bottom: 0px;
+			
+}
+
+	
+.session_container{
+	
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	@include transition(.3s);
+	
+	.login_warp{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background: #1f2026;
+		z-index: 10000;
+		
+		span{
+			text-align: center;
+			color: #fff;
+			width: 100%;
+			display: block;
+			font-weight: 100;
+			margin-top: 10px;
+			font-size: .7rem;
+		}
+		
+		.login_logo{
+		
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 70px;
+		margin-bottom: 40px;
+		}
+	
+	}
+	
+	
+	.signup_warp{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		left: 0px;
+		top: calc(100% - 60px);
+		background: #2a2b33;
+		z-index: 11000;
+		@include transition(.3s);
+		
+		
+		h1{
+			display: block;
+			width: 100%;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			background: #2a2b33;
+			color: #fff;
+			
+		}
+		
+	}   
+		
+	.errer_login_wrap, .errer_signup_wrap, .signup_ok{
+		height: 100%;
+		width: 100%;
+		background: #2a2b33;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 1000000;
+		display: none;
+		
+		span{
+			
+			position:absolute;
+			top:30%;
+			width: calc(100% - 120px);
+			padding: 60px;
+			
+			p{ 
+				display: block;
+				text-align: center;
+				font-weight: 300;
+				font-size: .8rem;
+				color: #fff;
+				text-align: center;
+			}
+			
+			button{
+				background: none;
+				border: none;
+				width: 100%;
+				overflow: visible;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 20px;
+				background: #3b3d48;
+				color: #fff;
+				outline: none;
+				margin-top: 40px;
+			}
+		}
+		
+	}
+
+	
+}
+
+
+
+/*SAVE*/
 
 
 
