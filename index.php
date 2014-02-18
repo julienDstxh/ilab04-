@@ -51,9 +51,7 @@
 <<<<<<< HEAD
 
 		<section class="swiper-slide">
-=======
 		<section class="swiper-slide dribbble">
->>>>>>> f87f3db97bc88610bac1c9d21704dd045ba5159e
 			<script>
 			  dug({
 			    endpoint: 'http://api.dribbble.com/shots/popular',
@@ -115,6 +113,5 @@
 		<li><a href="#">Rebecka</a></li>
 	</ul>
 </setion>
->>>>>>> f87f3db97bc88610bac1c9d21704dd045ba5159e
 	
 <?php include('footer.php') ?>
