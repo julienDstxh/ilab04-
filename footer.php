@@ -9,8 +9,10 @@
   })
   </script>
   <script>
-	var divHeight = $('.swiper-slide-active ul').height(); 
-    $('.swiper-wrapper, .swiper-slide, .swiper-container').css('height', divHeight+'px');
+  $(window).load(function() {
+		var divHeight = $('.swiper-slide-active ul').height(); 
+		$('.swiper-wrapper, .swiper-slide, .swiper-container').css('height', divHeight+'px');
+	});
   </script>
 
   <script src="js/data.js"></script>  
