@@ -13,7 +13,6 @@
 <body>
 	<header class="header">
 		<a href="#" class="ss-icon burger">rows</a>
-		<h1>Fillip</h1>
 	</header>
 	<div class="tabs">
 		<div class="ss-icon">list</div>

@@ -184,18 +184,37 @@ body {
     line-height: 45px;
     text-align: center; }
 
+/* TITLES
+
+.swiper-slide  {
+	
+	h1{
+		position: fixed;
+		z-index: 200;
+		top: 10px;
+		font-size: 24px;
+		line-height: 60px;
+		height: 60px;	
+		color: white;
+	}
+} */
 /* FEED */
-.links li {
-  height: 90px; }
+.links {
+  background: #fcfcfc; }
+  .links li {
+    height: 90px; }
 
 .graphic li {
-  height: 384px; }
+  overflow: hidden;
+  display: block; }
 .graphic a {
   height: 384px;
   overflow: hidden; }
-  .graphic a .legend {
-    height: 90px;
-    margin-top: -8px; }
+.graphic .legend {
+  height: 90px;
+  margin-top: -8px !important;
+  clear: both;
+  background: #fcfcfc; }
 
 .feed {
   padding-top: 105px;

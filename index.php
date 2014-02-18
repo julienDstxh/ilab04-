@@ -1,31 +1,32 @@
 <?php include('header.php') ?>
 
-
 <div class="swiper-container">
 	<div class="swiper-wrapper">
 		<section class="swiper-slide">
-			<?php include('layervault.php') ?>
+			<script>
+			  dug({
+			    endpoint: 'http://api.dribbble.com/shots/popular',
+			    template: '<ul class="feed graphic">\
+			          \{\{\#shots\}\}\
+			            <li>\
+			              <a href="\{\{url\}\}">\
+			                <img src="\{\{image_url\}\}">\
+			              </a>\
+			              <div class="legend">\
+			             	 <span class="drag ss-icon">directright</span>\
+			              	<a href="\{\{url\}\}">\
+				                \{\{title\}\}\
+				              </a>\
+			              	<br><time> {{created_at|dug.ago}}</time>\
+			              </div>\
+			            </li>\
+			          \{\{\/shots\}\}\
+			        </ul>'
+			  });
+			</script>
 		</section>
 		<section class="swiper-slide">
-			<script>
-			dug({
-			  endpoint: 'http://api.dribbble.com/shots/popular',
-			  template: '<ul class="feed graphic">\
-			    {{#shots}}\
-			      <li>\
-			        <a href="{{url}}" title="{{title}}">\
-			        <img src="{{image_400_url}}" alt="Oups, something went wrong">\
-			        <div class="legend">\
-			        <span class="drag ss-icon">directright</span>\
-			        {{title}} |\
-			        <time> {{created_at|dug.ago}}</time> / Dribble\
-			        </div>\
-			        </a>\
-			      </li>\
-			    {{/shots}}\
-			  </ul>'
-			});
-			</script>
+			<?php include('layervault.php') ?>
 		</section>
 		<section class="swiper-slide">
 			<?php include('hackernews.php') ?>

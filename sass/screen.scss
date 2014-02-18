@@ -87,9 +87,25 @@ body {
 	}
 }
 
+/* TITLES
+
+.swiper-slide  {
+	
+	h1{
+		position: fixed;
+		z-index: 200;
+		top: 10px;
+		font-size: 24px;
+		line-height: 60px;
+		height: 60px;	
+		color: white;
+	}
+} */
+
 /* FEED */
 
 .links {
+		background: #fcfcfc;
 		
 	li {
 		height: 90px; 
@@ -98,17 +114,19 @@ body {
 .graphic {
 		
 	li {
-		height: 384px;
+		overflow: hidden;
+		display: block;
 	}
 
 	a {
 		height: 384px;
 		overflow: hidden;
-		
-		.legend {
-			height: 90px;
-			margin-top: -8px ;
-		}
+	}
+	.legend {
+		height: 90px;
+		margin-top: -8px !important;
+		clear: both;
+		background: #fcfcfc;
 	}
 }
 
